@@ -5,11 +5,11 @@ from django.http import HttpResponse
 # Create your views here.
 def index(request):
     #return render('',{})
-    return HttpResponse('bbibmaeoimfdbmeionamfebrmrb orimim')
-
+    return render(request, 'mainsite/index.html')
 
 def about(request):
-    return HttpResponse('bmeionamfebrmrb orimim')
+    return render(request, 'mainsite/contact.html')
 
 def services(request):
-    return HttpResponse('bbibmaeoimfdbmeionamjkgk,kgubhoyi8hfebrmrb orimim')
+     return render(request, 'mainsite/services.html')
+    
